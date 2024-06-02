@@ -1,0 +1,416 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.firebase.socialblogs"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:7:5-80
+13-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:8:5-81
+14-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:8:22-78
+15
+16    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+17    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:25:5-79
+18-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:25:22-76
+19    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+19-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:24:5-68
+19-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:24:22-65
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:26:5-82
+20-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:26:22-79
+21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+21-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:26:5-110
+21-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:26:22-107
+22
+23    <application
+23-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:10:5-77:19
+24        android:name="com.firebase.socialblogs.MyApplication"
+24-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:11:9-38
+25        android:allowBackup="true"
+25-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:12:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.3.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\8cda1174697fab5b03eb1eda6d314b59\core-1.3.0\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:13:9-43
+29        android:label="@string/app_name"
+29-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:14:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:15:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:16:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:17:9-40
+34        <activity android:name="com.firebase.socialblogs.GroupEditActivity" />
+34-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:18:9-64
+34-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:18:19-52
+35        <activity android:name="com.firebase.socialblogs.GroupInfoActivity" />
+35-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:19:9-55
+35-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:19:19-52
+36        <activity android:name="com.firebase.socialblogs.GroupParticipantAddActivity" />
+36-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:20:9-65
+36-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:20:19-62
+37        <activity
+37-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:21:9-23:49
+38            android:name="com.firebase.socialblogs.GroupChatActivity"
+38-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:22:13-46
+39            android:theme="@style/AppThemeNo" />
+39-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:23:13-46
+40        <activity android:name="com.firebase.socialblogs.GroupCreateActivity" />
+40-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:24:9-57
+40-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:24:19-54
+41        <activity android:name="com.firebase.socialblogs.PostLikedByActivity" />
+41-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:25:9-57
+41-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:25:19-54
+42        <activity android:name="com.firebase.socialblogs.SettingActivity" />
+42-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:26:9-53
+42-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:26:19-50
+43        <activity android:name="com.firebase.socialblogs.PostDetailsActivity" />
+43-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:27:9-57
+43-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:27:19-54
+44        <activity android:name="com.firebase.socialblogs.ThereProfileActivity" />
+44-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:28:9-58
+44-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:28:19-55
+45        <activity android:name="com.firebase.socialblogs.AddPostActivity" >
+45-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:29:9-44:20
+45-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:29:19-50
+46            <intent-filter>
+46-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:30:13-36:29
+47                <action android:name="android.intent.action.SEND" />
+47-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:31:17-69
+47-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:31:25-66
+48
+49                <category android:name="android.intent.category.DEFAULT" />
+49-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:33:17-76
+49-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:33:27-73
+50
+51                <data android:mimeType="image/*" />
+51-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:35:17-52
+51-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:35:23-49
+52            </intent-filter>
+53            <intent-filter>
+53-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:37:13-43:29
+54                <action android:name="android.intent.action.SEND" />
+54-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:31:17-69
+54-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:31:25-66
+55
+56                <category android:name="android.intent.category.DEFAULT" />
+56-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:33:17-76
+56-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:33:27-73
+57
+58                <data android:mimeType="text/plain" />
+58-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:35:17-52
+58-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:35:23-49
+59            </intent-filter>
+60        </activity>
+61        <activity
+61-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:45:9-47:49
+62            android:name="com.firebase.socialblogs.ChatsActivity"
+62-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:46:13-42
+63            android:theme="@style/AppThemeNo" />
+63-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:47:13-46
+64        <activity android:name="com.firebase.socialblogs.LoginActivity" />
+64-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:48:9-51
+64-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:48:19-48
+65        <activity android:name="com.firebase.socialblogs.DashboardActivity" >
+65-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:49:9-55:20
+65-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:49:19-52
+66            <intent-filter>
+66-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:50:13-54:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:51:17-69
+67-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:51:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:53:17-77
+69-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:53:27-74
+70            </intent-filter>
+71        </activity>
+72        <activity android:name="com.firebase.socialblogs.RegisterActivity" />
+72-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:56:9-54
+72-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:56:19-51
+73        <activity android:name="com.firebase.socialblogs.MainActivity" />
+73-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:57:9-50
+73-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:57:19-47
+74
+75        <service
+75-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:59:9-66:19
+76            android:name="com.firebase.socialblogs.Notification.FirebaseMessaging"
+76-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:60:13-59
+77            android:enabled="true"
+77-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:61:13-35
+78            android:exported="true" >
+78-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:62:13-36
+79            <intent-filter>
+79-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:63:13-65:29
+80                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+80-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:64:17-78
+80-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:64:25-75
+81            </intent-filter>
+82        </service>
+83
+84        <provider
+84-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:68:9-76:20
+85            android:name="androidx.core.content.FileProvider"
+85-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:69:13-62
+86            android:authorities="com.firebase.socialblogs.fileprovider"
+86-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:70:13-72
+87            android:exported="false"
+87-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:71:13-37
+88            android:grantUriPermissions="true" >
+88-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:72:13-47
+89            <meta-data
+89-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:73:13-75:49
+90                android:name="android.support.FILE_PROVIDER_PATHS"
+90-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:74:17-67
+91                android:resource="@xml/paths" />
+91-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:75:17-46
+92        </provider>
+93
+94        <activity
+94-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:24:9-31:50
+95            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+95-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:25:13-85
+96            android:excludeFromRecents="true"
+96-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:26:13-46
+97            android:exported="true"
+97-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:27:13-36
+98            android:launchMode="singleTask"
+98-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:28:13-44
+99            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+99-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:29:13-102
+100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+100-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:30:13-72
+101
+102        <service
+102-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:33:9-39:19
+103            android:name="com.google.firebase.components.ComponentDiscoveryService"
+103-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:34:13-84
+104            android:directBootAware="true"
+104-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+105            android:exported="false" >
+105-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:35:13-37
+106            <meta-data
+106-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:36:13-38:85
+107                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+107-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:37:17-109
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-auth:19.3.2] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\2a666cc8240866a1080e2e0e429921a7\jetified-firebase-auth-19.3.2\AndroidManifest.xml:38:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
+110                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+110-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:33:17-109
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\d03cd3a7f6946c705a9b6b75f4907d53\jetified-firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\039274378dde6f941b0b385b5013b680\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+113                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+113-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\039274378dde6f941b0b385b5013b680\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\039274378dde6f941b0b385b5013b680\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\7266aec20aebc1c3ab46a554673241ba\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:39:13-41:85
+116                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+116-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\7266aec20aebc1c3ab46a554673241ba\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:40:17-119
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\7266aec20aebc1c3ab46a554673241ba\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:41:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:32:13-34:85
+119                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+119-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:33:17-96
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:34:17-82
+121            <meta-data
+121-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\4618eb26413b62bba34bc2960b760fea\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:30:13-32:85
+122                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+122-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\4618eb26413b62bba34bc2960b760fea\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:31:17-139
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.android.gms:play-services-measurement-api:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\4618eb26413b62bba34bc2960b760fea\jetified-play-services-measurement-api-17.5.0\AndroidManifest.xml:32:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\90e4eeea735716465680d24899fd03bc\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+125                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+125-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\90e4eeea735716465680d24899fd03bc\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\90e4eeea735716465680d24899fd03bc\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\cf4a03d554f01453e1ec2dd14f606b96\jetified-firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+128                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+128-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\cf4a03d554f01453e1ec2dd14f606b96\jetified-firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\cf4a03d554f01453e1ec2dd14f606b96\jetified-firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+130        </service>
+131
+132        <activity
+132-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
+133            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+133-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
+134            android:excludeFromRecents="true"
+134-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
+135            android:exported="false"
+135-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
+136            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+136-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
+137        <!--
+138            Service handling Google Sign-In user revocation. For apps that do not integrate with
+139            Google Sign-In, this service will never be started.
+140        -->
+141        <service
+141-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
+142            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+142-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
+143            android:exported="true"
+143-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
+144            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+144-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
+145            android:visibleToInstantApps="true" />
+145-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\df75ac37c12e2104f21cf4be1dd0c6cb\jetified-play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
+146
+147        <provider
+147-->[com.squareup.picasso:picasso:2.71828] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\05bb6ae7562e6199cdafb23c02a8f3c5\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+148            android:name="com.squareup.picasso.PicassoProvider"
+148-->[com.squareup.picasso:picasso:2.71828] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\05bb6ae7562e6199cdafb23c02a8f3c5\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+149            android:authorities="com.firebase.socialblogs.com.squareup.picasso"
+149-->[com.squareup.picasso:picasso:2.71828] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\05bb6ae7562e6199cdafb23c02a8f3c5\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+150            android:exported="false" />
+150-->[com.squareup.picasso:picasso:2.71828] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\05bb6ae7562e6199cdafb23c02a8f3c5\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+151        <!--
+152             FirebaseMessagingService performs security checks at runtime,
+153             but set to not exported to explicitly avoid allowing another app to call it.
+154        -->
+155        <service
+155-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\7266aec20aebc1c3ab46a554673241ba\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:28:9-35:19
+156            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+156-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\7266aec20aebc1c3ab46a554673241ba\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:29:13-82
+157            android:directBootAware="true"
+157-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\7266aec20aebc1c3ab46a554673241ba\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:30:13-43
+158            android:exported="false" >
+158-->[com.google.firebase:firebase-messaging:20.2.4] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\7266aec20aebc1c3ab46a554673241ba\jetified-firebase-messaging-20.2.4\AndroidManifest.xml:31:13-37
+159            <intent-filter android:priority="-500" >
+159-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:63:13-65:29
+160                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+160-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:64:17-78
+160-->C:\Users\Thienng23\Downloads\Social-Media-App-master\Social-Media-App-master\app\src\main\AndroidManifest.xml:64:25-75
+161            </intent-filter>
+162        </service>
+163
+164        <receiver
+164-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:37:9-44:20
+165            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+165-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:38:13-78
+166            android:exported="true"
+166-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:39:13-36
+167            android:permission="com.google.android.c2dm.permission.SEND" >
+167-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:40:13-73
+168            <intent-filter>
+168-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:41:13-43:29
+169                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+169-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:42:17-81
+169-->[com.google.firebase:firebase-iid:20.2.3] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\18c51d46dee2c5947c75b42dc36a9b80\jetified-firebase-iid-20.2.3\AndroidManifest.xml:42:25-78
+170            </intent-filter>
+171        </receiver>
+172
+173        <activity
+173-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ed4ee14058046286c242987b65f73958\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ed4ee14058046286c242987b65f73958\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ed4ee14058046286c242987b65f73958\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ed4ee14058046286c242987b65f73958\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+177
+178        <provider
+178-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+179            android:name="com.google.firebase.provider.FirebaseInitProvider"
+179-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+180            android:authorities="com.firebase.socialblogs.firebaseinitprovider"
+180-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+181            android:exported="false"
+181-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+182            android:initOrder="100" />
+182-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\167fcbb57fe3eee37a07022ca11b1245\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+183
+184        <receiver
+184-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:29:9-33:20
+185            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+185-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:30:13-85
+186            android:enabled="true"
+186-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:31:13-35
+187            android:exported="false" >
+187-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:32:13-37
+188        </receiver>
+189
+190        <service
+190-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:35:9-38:40
+191            android:name="com.google.android.gms.measurement.AppMeasurementService"
+191-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:36:13-84
+192            android:enabled="true"
+192-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:37:13-35
+193            android:exported="false" />
+193-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:38:13-37
+194        <service
+194-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:39:9-43:72
+195            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+195-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:40:13-87
+196            android:enabled="true"
+196-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:41:13-35
+197            android:exported="false"
+197-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:42:13-37
+198            android:permission="android.permission.BIND_JOB_SERVICE" />
+198-->[com.google.android.gms:play-services-measurement:17.5.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\ab99972daff4519f48daa43fc980b757\jetified-play-services-measurement-17.5.0\AndroidManifest.xml:43:13-69
+199
+200        <meta-data
+200-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\311d06531152a3f7dbce415b02d3c7d2\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+201            android:name="com.google.android.gms.version"
+201-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\311d06531152a3f7dbce415b02d3c7d2\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+202            android:value="@integer/google_play_services_version" />
+202-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\311d06531152a3f7dbce415b02d3c7d2\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+203
+204        <service
+204-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\e08e5515bb305982dd66e54453197ef5\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+205            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+205-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\e08e5515bb305982dd66e54453197ef5\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+206            android:exported="false" >
+206-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\e08e5515bb305982dd66e54453197ef5\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+207            <meta-data
+207-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\e08e5515bb305982dd66e54453197ef5\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+208                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+208-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\e08e5515bb305982dd66e54453197ef5\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+209                android:value="cct" />
+209-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\e08e5515bb305982dd66e54453197ef5\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+210        </service>
+211        <service
+211-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\b8aeb5835536752ab15df733dd21ce76\jetified-transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+212            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+212-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\b8aeb5835536752ab15df733dd21ce76\jetified-transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+213            android:exported="false"
+213-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\b8aeb5835536752ab15df733dd21ce76\jetified-transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+214            android:permission="android.permission.BIND_JOB_SERVICE" >
+214-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\b8aeb5835536752ab15df733dd21ce76\jetified-transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+215        </service>
+216
+217        <receiver
+217-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\b8aeb5835536752ab15df733dd21ce76\jetified-transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+218            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+218-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\b8aeb5835536752ab15df733dd21ce76\jetified-transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+219            android:exported="false" />
+219-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Thienng23\.gradle\caches\transforms-2\files-2.1\b8aeb5835536752ab15df733dd21ce76\jetified-transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+220    </application>
+221
+222</manifest>

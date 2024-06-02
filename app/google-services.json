@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "438942396712",
+    "firebase_url": "https://truy-da7cb-default-rtdb.firebaseio.com",
+    "project_id": "truy-da7cb",
+    "storage_bucket": "truy-da7cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438942396712:android:5e72eb7f532c6e21fb601d",
+        "android_client_info": {
+          "package_name": "com.firebase.socialblogs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438942396712-a62ojg31p1maav4m7273u5e2i51vu1tq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebase.socialblogs",
+            "certificate_hash": "307600a2a98ffc60235d91e58cd41760665c8dd8"
+          }
+        },
+        {
+          "client_id": "438942396712-a0tnjtne6cso2r44afhvsrf0d29r4hsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0jGx_OfNjQZsQMO8NY8ZU-d6C2z9C5Yg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438942396712-4lanu2cib73g2o0oi3p3l33ipnff3sq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
